@@ -2,7 +2,7 @@
 
 const redirect = () => {
   // Phone number
-  whatsappNumber = '+5215510698215';
+  whatsappNumber = '+527226314416';
   // Intro
   introText = '%5F'+encodeURIComponent('Hola, me gustaría ordenar')+'%5F%0A%0A';
   // Body
