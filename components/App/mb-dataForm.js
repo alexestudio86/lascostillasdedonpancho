@@ -16,4 +16,8 @@ const createDataForm = (e) => {
 
   // Add event to cotinue
   modal.querySelector('a[name=btnContinue]').addEventListener('click', validateData );
+
+  // Remove default
+  modal.querySelector('form').addEventListener('submit', (e) => e.preventDefault() );
+  
 }
