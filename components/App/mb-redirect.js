@@ -14,7 +14,10 @@ const redirect = () => {
   finalText = '%0A'+encodeURIComponent('A nombre de: ');
   // Name validated
   nameValidated = '%2A'+encodeURIComponent( document.getElementById('customerName').value )+'%2A';
-  sendMessage = 'https://wa.me/'+whatsappNumber+'/?text='+introText+bodyText+finalText+nameValidated;
+  // Deliver
+  deliver = '%0A'+encodeURIComponent( document.querySelector('form#deliver input:checked').value );
+  // Final message
+  sendMessage = 'https://wa.me/'+whatsappNumber+'/?text='+introText+bodyText+finalText+nameValidated+deliver;
   // Clean all
   setTimeout( () => {
     car.splice(0,car.length);
